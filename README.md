@@ -46,15 +46,16 @@ V1.9.23.9527 是本项目的初始开源版本，也是一个小小的彩蛋。�
   {
     "name": "default",
     "type": "HarmonyOS",
-    "material": {
-      "storePassword": "...",       // 你的 keystore 密码
-      "certpath": "...",            // 你的 .cer 证书路径
-      "keyAlias": "...",
-      "keyPassword": "...",
-      "profile": "...",             // 你的 .p7b 调试 profile
-      "signAlg": "SHA256withECDSA",
-      "storeFile": "..."            // 你的 .p12 密钥库路径
-    }
+   "material": {
+  "certpath": "...",        // 你的 .cer 证书路径（本地配置，勿入库）
+  "keyAlias": "...",
+  "keyPassword": "...",
+  "profile": "...",         // 你的 .p7b 调试 profile
+  "signAlg": "SHA256withECDSA",
+  "storeFile": "...",       // 你的 .p12 密钥库路径
+  "storePassword": "..."
+}
+
   }
 ]
 ```
