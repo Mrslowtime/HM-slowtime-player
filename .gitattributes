@@ -1,0 +1,14 @@
+# 两台电脑换行习惯可能不同，禁止 git 自动转换，避免整仓假 diff
+* -text
+
+# 源码统一按 LF 存储与检出：编辑器若写回 CRLF 会被归一，
+# 否则一次编辑整文件就会产生上千行「假删除」，严重干扰同步与 review
+*.ets text eol=lf
+*.ts text eol=lf
+*.json5 text eol=lf
+*.mjs text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+
+# 历史版本归档目录不参与 git archive 导出的源码快照（双保险）
+releases/ export-ignore

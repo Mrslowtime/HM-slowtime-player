@@ -1,0 +1,10 @@
+{
+  "app": {
+    "bundleName": "com.slowtime.hmplayer",
+    "vendor": "slowtime",
+    "versionCode": 109239527,
+    "versionName": "1.9.23.9527",
+    "icon": "$media:app_icon",
+    "label": "$string:app_name"
+  }
+}

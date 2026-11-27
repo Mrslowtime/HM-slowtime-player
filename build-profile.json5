@@ -1,0 +1,57 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Administrator\\.ohos\\config\\default_slowtime-HM-play_ttA-9iq9XprDUSy8jnn7RsgWj69Y_tP9380ZvdXxc9s=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B3ACCC83B81594EA77977C500CD39B7BB4743842A3738C7B7763D364BFFCD50B914B666F0B090BE",
+          "profile": "C:\\Users\\Administrator\\.ohos\\config\\default_slowtime-HM-play_ttA-9iq9XprDUSy8jnn7RsgWj69Y_tP9380ZvdXxc9s=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\default_slowtime-HM-play_ttA-9iq9XprDUSy8jnn7RsgWj69Y_tP9380ZvdXxc9s=.p12",
+          "storePassword": "0000001BA40A7E7B6CBEAA92CB76B09EE3C2C933BD9666E772659BC181D86E39ED73AF0C34586F71E6E1B4"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": "6.1.1(24)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "targetSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
